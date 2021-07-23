@@ -1,6 +1,6 @@
 def print_formatted(number):
     # your code goes here
-    width = len(str(bin(number)[2:]))
+    width = len(bin(number)[2:]) #You can algo use number.bit_length()
     number_list = [" ".join([str(i).rjust(width),
                              oct(i)[2:].rjust(width),
                              hex(i).upper()[2:].rjust(width),
